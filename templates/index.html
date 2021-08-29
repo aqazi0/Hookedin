@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TheAmris</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="{% static '/css/St.css' %}" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="d"> efds </div>
+    <hr>
+    <div id="head">
+        <h1>Hooked In</h1>
+        {% if user.is_authenticated %}
+        <h1>{{user}}</h1>
+        {% endif %}
+        <div id="dd">Stop fishin around the oceans huge we brought you your<br> one stop for finding your shark</div>
+        <div class="button">
+            <input type="submit" value="Sign In" class="submit" name="Sign In" id="SignIn" onclick="window.location.href='SignIn';">
+            <input type="submit" value="Sign Up" class="submit" name="Sign Up" id="SignUp" onclick="window.location.href='login';">
+        </div>
+    </div>
+    <div class="vl">
+        <img src="{% static 'img/img.jpeg' %}" height="500px" width="500px"  class="img">
+    </div>
+   <div id="b">hi</div>
+   <hr>
+  </body>
+</html>

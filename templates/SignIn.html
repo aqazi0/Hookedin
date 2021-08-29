@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="{% static 'css/s.css' %}">
+</head>
+<body>
+    <h1>Welcome To Sign In </h1>
+    
+        <img src="{% static 'img/img.jpeg' %}" height="400px" width="600px"  class="img">
+    
+    <span id="bdy">
+        <form action="filter" method='POST'>{% csrf_token %}
+        <div class="form-group">
+            <label for="uname">Email ID :&nbsp;</label>
+            <input type="text" name="uname" id="uname" />
+        </div>
+        <div class="form-group">
+            <label for="Set_Password">Password:&nbsp;</label>
+            <input type="password" name="pass" id="pass" required/>
+        </div>
+       
+        <input type="submit" value="Submit" class="submit" name="Submit" id="Submit">
+        
+    </form>
+    </span>
+</body>
+</html>
